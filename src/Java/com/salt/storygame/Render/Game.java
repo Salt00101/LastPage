@@ -11,6 +11,7 @@ import com.salt.storygame.Render.IO.MouseInput;
 import com.salt.storygame.Render.IO.SpriteSheet;
 import com.salt.storygame.Render.ObjList.IEnumerableID.ID;
 import com.salt.storygame.Render.Puzzle.Puzzle;
+import com.salt.storygame.Render.RScene.Scene;
 import com.salt.storygame.Render.Utils.IGameObjectHandler;
 import com.salt.storygame.Render.org.Chunk;
 
@@ -25,7 +26,7 @@ public class Game extends Canvas implements Runnable {
     private boolean isRunning = false;
     private Thread thread;
 
-    private IGameObjectHandler handler;
+    public IGameObjectHandler handler;
 
     private Camera camera;
 
@@ -45,6 +46,8 @@ public class Game extends Canvas implements Runnable {
         // Initialize Listeners
         this.addKeyListener(new KeyInput(handler));
         this.addMouseListener(new MouseInput(camera, handler));
+
+        Scene spawn = new Scene(handler, Chunk.map[Chunk.dx][Chunk.dy], );
 
         // Start game
         start();

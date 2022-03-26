@@ -28,7 +28,7 @@ public class ColorManager extends Color {
     public static final Color YELLOW = yellow;
     public static final Color green         = new Color(0, 255, 0);
     public static final Color GREEN = green;
-    public static final Color darkGreen     = new Color(16, 101, 3);
+    public static final Color darkGreen     = new Color(0, 100, 0);
     public static final Color DARK_GREEN = darkGreen;
     public static final Color magenta       = new Color(255, 0, 255);
     public static final Color MAGENTA = magenta;
