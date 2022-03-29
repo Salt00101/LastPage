@@ -149,7 +149,7 @@ public class Scene {
                 int blue = (pixel) & 0xff;
                 if (red == 255 && green == 0 && blue == 0) {
                     handler.add(new Border(i*32, j*32, 32, 32, ID.Border, Textures.border));
-                } if (red == 255 && blue == 255 && green == 0) {
+                } if (red == 255 && blue == 0 && green == 255) {
                     handler.add(new Block(i*32, j*32, 32, 32, ID.Block, Textures.wall1));
                 } if (red == 0 && blue == 255 && green == 0) {
                     handler.add(new Player(i*32, j*32, 32, 32, ID.Player, handler, null));
