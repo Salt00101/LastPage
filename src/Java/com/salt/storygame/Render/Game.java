@@ -35,6 +35,8 @@ public class Game extends Canvas implements Runnable {
     private BufferedImage level;
     private BufferedImage spriteSheet;
 
+    Scene spawn;
+
     public Game() {
         // Creation of window
         new Window(1000,563,"Last Page", this);
@@ -47,7 +49,9 @@ public class Game extends Canvas implements Runnable {
         this.addKeyListener(new KeyInput(handler));
         this.addMouseListener(new MouseInput(camera, handler));
 
-        Scene spawn = new Scene(handler, Chunk.map[Chunk.dx][Chunk.dy], );
+        BufferedImageLoader bil = new BufferedImageLoader();
+
+        spawn = new Scene(handler, bil.loadImage("/sampl.png"), bil.loadImage("/hmap.png"), null, "Plains", null);
 
         // Start game
         start();
@@ -131,7 +135,7 @@ public class Game extends Canvas implements Runnable {
 
         g2D.translate(-camera.getX(), -camera.getY());
 
-        //insert loader here
+        spawn.Draw(g);
 
         g2D.translate(camera.getX(), camera.getY());
 

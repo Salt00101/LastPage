@@ -2,16 +2,16 @@ package com.salt.storygame.SaveManager;
 
 import com.salt.storygame.Flag.Flags;
 import com.salt.storygame.Player.Player;
-import com.salt.storygame.Scene.SceneList;
 import com.salt.storygame.StoryGame;
 
 import java.io.*;
 
 public class SaveManager {
+    /*
     private static final String src = "src/Resources/com/salt/storygame/Saves/save.ser";
 
     public static void save() {
-        Save save = Save.getSave(Player.name, Player.lvl, Player.xp, Player.threshold, Player.hp, Player.atk, Player.def, Player.spd, StoryGame.chapter, StoryGame.scene, SceneList.sceneName, Flags.flags, Player.inventoryAmount, Player.gear);
+        Save save = Save.getSave(Player.name, Player.lvl, Player.xp, Player.threshold, Player.hp, Player.atk, Player.def, Player.spd, StoryGame.chapter, Flags.flags, Player.inventoryAmount, Player.gear);
         try {
             FileOutputStream fileOut = new FileOutputStream(src);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -54,4 +54,5 @@ public class SaveManager {
             return;
         }
     }
+     */
 }

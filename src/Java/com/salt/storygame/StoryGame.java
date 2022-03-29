@@ -3,13 +3,11 @@ package com.salt.storygame;
 import com.salt.storygame.Item.IGearHandler;
 import com.salt.storygame.Player.Player;
 import com.salt.storygame.SaveManager.SaveManager;
-import com.salt.storygame.Scene.SceneManager;
 
 import java.io.File;
 
-import static com.salt.storygame.Scene.SceneList.*;
-
 public class StoryGame {
+    /*
     public static final String GAME_ID = "SGM";
     public static final String TITLE = "Story Game";
 
@@ -33,4 +31,5 @@ public class StoryGame {
         welcome();
         SceneManager.load();
     }
+     */
 }
