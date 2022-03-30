@@ -30,6 +30,8 @@ public class Game extends Canvas implements Runnable {
 
     private Camera camera;
 
+    private BufferedImageLoader bufferedImageLoader = new BufferedImageLoader();
+
     Puzzle puzzle;
 
     private BufferedImage level;
@@ -51,7 +53,7 @@ public class Game extends Canvas implements Runnable {
 
         BufferedImageLoader bil = new BufferedImageLoader();
 
-        spawn = new Scene(handler, bil.loadImage("/sampl.png"), bil.loadImage("/hmap.png"), null, "Plains", null);
+        spawn = new Scene(handler, bufferedImageLoader.loadImage("/hmap.png"), "Plains", null);
 
         // Start game
         start();

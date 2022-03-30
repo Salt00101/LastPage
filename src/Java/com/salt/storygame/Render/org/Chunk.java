@@ -20,6 +20,8 @@ public class Chunk {
             { mss.grab(1, 6, 64, 64), mss.grab(2, 6, 64, 64), mss.grab(3, 6, 64, 64), mss.grab(4, 6, 64, 64), mss.grab(5, 6, 64, 64), mss.grab(6, 6, 64, 64), mss.grab(7, 6, 64, 64), mss.grab(8, 6, 64, 64), mss.grab(9, 6, 64, 64) }
     };
 
+
+
     public static int dx = 4;
     public static int dy = 2;
 }

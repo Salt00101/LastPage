@@ -12,8 +12,8 @@ public class Liquid extends GameObject {
 
     private BufferedImage ocean;
 
-    public Liquid(int x, int y, int width, int height, ID id, BufferedImage tex) {
-        super(x, y, width, height, id, tex);
+    public Liquid(int x, int y, int width, int height, ID id, BufferedImage tex, int tag) {
+        super(x, y, width, height, id, tex, tag);
     }
 
     @Override

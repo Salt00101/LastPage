@@ -2,6 +2,7 @@ package com.salt.storygame.Render.IO;
 
 import com.salt.storygame.Render.GameObject.Camera;
 import com.salt.storygame.Render.GameObject.GameObject;
+import com.salt.storygame.Render.GameObject.GameObjects.Player;
 import com.salt.storygame.Render.ObjList.IEnumerableID.ID;
 import com.salt.storygame.Render.Utils.IGameObjectHandler;
 
@@ -22,5 +23,21 @@ public class MouseInput extends MouseAdapter {
     public void mousePressed(MouseEvent e) {
         int mx = (int) (e.getX() + camera.getX());
         int my = (int) (e.getY() + camera.getY());
+
+        Player player = null;
+
+        for (GameObject obj : handler.gameObjects) {
+            if (obj.getId() == ID.Player) {
+                player = (Player) obj;
+            }
+        }
+
+        for (GameObject obj : handler.gameObjects) {
+            if (obj.getId() == ID.Button) {
+                if (obj.getBounds().contains(mx, my) && (Math.abs(player.getX() - obj.getX()) <= 2) && (Math.abs(player.getY() - obj.getY()) <= 2)) {
+                    obj.action();
+                }
+            }
+        }
     }
 }

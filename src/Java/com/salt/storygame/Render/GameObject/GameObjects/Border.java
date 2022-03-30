@@ -12,8 +12,8 @@ public class Border extends GameObject {
 
     BufferedImage block;
 
-    public Border(int x, int y, int width, int height, ID id, BufferedImage tex) {
-        super(x, y, width, height, id, tex);
+    public Border(int x, int y, int width, int height, ID id, BufferedImage tex, int tag) {
+        super(x, y, width, height, id, tex, tag);
 
         block = tex;
     }

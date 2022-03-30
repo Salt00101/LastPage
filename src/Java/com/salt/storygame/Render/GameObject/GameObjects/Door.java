@@ -14,8 +14,8 @@ public class Door extends GameObject {
     BufferedImage open;
     BufferedImage close;
 
-    public Door(int x, int y, int width, int height, ID id, BufferedImage tex1, BufferedImage tex2) {
-        super(x, y, width, height, id, tex1);
+    public Door(int x, int y, int width, int height, ID id, BufferedImage tex1, BufferedImage tex2, int tag) {
+        super(x, y, width, height, id, tex1, tag);
 
         open = tex1;
         close = tex2;
@@ -27,7 +27,7 @@ public class Door extends GameObject {
 
     @Override
     public void render(Graphics g) {
-        if (this.state) {
+        if (state) {
             g.drawImage(open, x, y, null);
         } else {
             g.drawImage(close, x, y, null);
@@ -40,5 +40,7 @@ public class Door extends GameObject {
     }
 
     @Override
-    public void action() { }
+    public void action() {
+        state = true;
+    }
 }

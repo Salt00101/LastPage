@@ -10,19 +10,22 @@ public abstract class GameObject {
     protected int x, y, height, width;
     protected float vx = 0.0f, vy = 0.0f;
 
-    public boolean state = true;
-
     BufferedImage tex;
 
     protected ID id;
 
-    public GameObject(int x, int y, int width, int height, ID id, BufferedImage tex) {
+    protected int tag;
+
+    public boolean state = false;
+
+    public GameObject(int x, int y, int width, int height, ID id, BufferedImage tex, int tag) {
         this.x = x;
         this.y = y;
         this.height = height;
         this.width = width;
         this.id = id;
         this.tex = tex;
+        this.tag = tag;
     }
 
     public abstract void tick();

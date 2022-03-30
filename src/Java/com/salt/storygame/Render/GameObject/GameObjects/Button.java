@@ -17,10 +17,8 @@ public class Button extends GameObject {
     private BufferedImage s1;
     private BufferedImage s2;
 
-    private boolean isDown;
-
-    public Button(int x, int y, int width, int height, ID id, Puzzle puzzle, BufferedImage tex1, BufferedImage tex2) {
-        super(x, y, width, height, id, tex1);
+    public Button(int x, int y, int width, int height, ID id, Puzzle puzzle, BufferedImage tex1, BufferedImage tex2, int tag) {
+        super(x, y, width, height, id, tex1, tag);
         this.puzzle = puzzle;
 
         s1 = tex1;
@@ -34,7 +32,7 @@ public class Button extends GameObject {
 
     @Override
     public void render(Graphics g) {
-        if (!isDown) {
+        if (!state) {
             g.drawImage(s1, x, y, null);
         } else {
             g.drawImage(s2, x, y, null);
@@ -49,5 +47,6 @@ public class Button extends GameObject {
     @Override
     public void action() {
         System.out.println("ButtonPressed");
+        state = true;
     }
 }

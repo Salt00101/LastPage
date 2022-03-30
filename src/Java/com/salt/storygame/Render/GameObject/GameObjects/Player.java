@@ -17,8 +17,8 @@ public class Player extends GameObject {
 
     boolean canSwim = false;
 
-    public Player(int x, int y, int height, int width, ID id, IGameObjectHandler handler, BufferedImage tex) {
-        super(x, y, width, height, id, tex);
+    public Player(int x, int y, int height, int width, ID id, IGameObjectHandler handler, BufferedImage tex, int tag) {
+        super(x, y, width, height, id, tex, tag);
         this.handler = handler;
     }
 
@@ -73,7 +73,7 @@ public class Player extends GameObject {
                         y = obj.getY() + 32;
                     }
                 }
-            } else if (obj.getId() == ID.Door && obj.state) {
+            } else if (obj.getId() == ID.Door && !obj.state) {
                 if (getBoundsH().intersects(obj.getBounds())) {
                     if (vx > 0) {
                         vx = 0;
@@ -140,6 +140,9 @@ public class Player extends GameObject {
 
     @Override
     public void render(Graphics g) {
+        g.setColor(Color.red);
+        g.fillRect(getBoundsH().x, getBoundsH().y, getBoundsH().width, getBoundsH().height);
+        g.fillRect(getBoundsV().x, getBoundsV().y, getBoundsV().width, getBoundsV().height);
         g.setColor(Color.cyan);
         g.fillRect(x, y, width, height);
     }
