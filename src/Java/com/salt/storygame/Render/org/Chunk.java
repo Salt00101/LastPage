@@ -18,7 +18,7 @@ public class Chunk {
     public static final BufferedImage n15 = mss.grab(1, 5, 64, 64); // 15
     public static final BufferedImage MOUNTAIN_VILLAGE = mss.grab(1, 6, 64, 64); // 16
     public static final BufferedImage MOUNTAIN_ENTRANCE = mss.grab(1, 7, 64, 64); // 17
-    public static final BufferedImage MOUNT = mss.grab(1, 8, 64, 64); // 18
+    public static final BufferedImage MOUNTAIN = mss.grab(1, 8, 64, 64); // 18
     public static final BufferedImage n19 = mss.grab(1, 9, 64, 64); // 19
     public static final BufferedImage FOREST = mss.grab(2, 1, 64, 64); // 21
     public static final BufferedImage FOREST_ENTRANCE = mss.grab(2, 2, 64, 64); // 22
