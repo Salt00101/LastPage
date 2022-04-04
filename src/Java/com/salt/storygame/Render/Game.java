@@ -51,9 +51,9 @@ public class Game extends Canvas implements Runnable {
         this.addKeyListener(new KeyInput(handler));
         this.addMouseListener(new MouseInput(camera, handler));
 
-        BufferedImageLoader bil = new BufferedImageLoader();
+        // BufferedImageLoader bil = new BufferedImageLoader();
 
-        spawn = new Scene(handler, bufferedImageLoader.loadImage("/hmap.png"), "Plains", null);
+        // spawn = new Scene(handler, bufferedImageLoader.loadImage("/hmap.png"), "Plains", null);
 
         // Start game
         start();

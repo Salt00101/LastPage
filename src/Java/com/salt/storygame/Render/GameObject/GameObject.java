@@ -14,11 +14,11 @@ public abstract class GameObject {
 
     protected ID id;
 
-    protected int tag;
+    protected char tag;
 
     public boolean state = false;
 
-    public GameObject(int x, int y, int width, int height, ID id, BufferedImage tex, int tag) {
+    public GameObject(int x, int y, int width, int height, ID id, BufferedImage tex, char tag) {
         this.x = x;
         this.y = y;
         this.height = height;
