@@ -7,5 +7,6 @@ public enum ID {
     Chest(),
     Door(),
     Border(),
-    Liquid()
+    Liquid(),
+    Warp()
 }

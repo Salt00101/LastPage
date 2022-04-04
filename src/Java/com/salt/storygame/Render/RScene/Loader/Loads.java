@@ -73,6 +73,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -99,6 +103,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -125,6 +133,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -151,6 +163,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -177,6 +193,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -203,6 +223,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -229,6 +253,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -255,6 +283,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -281,6 +313,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -307,6 +343,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -333,6 +373,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -359,6 +403,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -385,6 +433,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -411,6 +463,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -437,6 +493,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -463,6 +523,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -489,6 +553,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -515,6 +583,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -541,6 +613,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -567,6 +643,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -593,6 +673,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -619,6 +703,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -645,6 +733,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -671,6 +763,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -697,6 +793,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -723,6 +823,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -749,6 +853,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -775,6 +883,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -801,6 +913,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -827,6 +943,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -853,6 +973,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -879,6 +1003,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -905,6 +1033,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }
@@ -931,6 +1063,10 @@ public class Loads {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
                 } if (red == 0 && green == 255 && blue == 255) {
                     handler.add(new Door(i*32, j*32, 32, 32, ID.Door, Textures.wall1, Textures.NULL, ' '));
+                } if (red == 255 && green == 255 && blue == 255) {
+                    char tag;
+                    if (i == 0) { tag = 'n'; } else if (i == 63) { tag = 's'; } else if (j == 0) { tag = 'w'; } else { tag = 'e'; }
+                    handler.add(new Warp(i*32, j*32, 32, 32, ID.Warp, Textures.barrier, tag));
                 }
             }
         }

@@ -12,6 +12,7 @@ public class Textures {
 
     public static final BufferedImage NULL = ss.grab(1, 1, 32, 32);
     public static final BufferedImage border = ss.grab(1, 4, 32, 32);
+    public static final BufferedImage barrier = ss.grab(1, 2, 32, 32);
 
     // Plains
     public static final BufferedImage floor1 = ss.grab(2, 1, 32, 32);
