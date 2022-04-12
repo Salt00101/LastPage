@@ -14,7 +14,7 @@ public class Door extends GameObject {
     BufferedImage open;
     BufferedImage close;
 
-    public Door(int x, int y, int width, int height, ID id, BufferedImage tex1, BufferedImage tex2, int tag) {
+    public Door(int x, int y, int width, int height, ID id, BufferedImage tex1, BufferedImage tex2, char tag) {
         super(x, y, width, height, id, tex1, tag);
 
         open = tex1;

@@ -9,7 +9,12 @@ public class SpriteSheet {
         this.img = img;
     }
 
-    public BufferedImage grab(int c, int r, int w, int h) {
+    public BufferedImage grab64(int c, int r, int w, int h) {
+        BufferedImage ret = img.getSubimage((r*64) - 64, (c*64) - 64, w, h);
+        return ret;
+    }
+
+    public BufferedImage grab32(int c, int r, int w, int h) {
         return img.getSubimage((c*32) - 32, (r*32) - 32, w, h);
     }
 }

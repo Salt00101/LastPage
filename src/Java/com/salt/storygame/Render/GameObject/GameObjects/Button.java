@@ -17,7 +17,7 @@ public class Button extends GameObject {
     private BufferedImage s1;
     private BufferedImage s2;
 
-    public Button(int x, int y, int width, int height, ID id, Puzzle puzzle, BufferedImage tex1, BufferedImage tex2, int tag) {
+    public Button(int x, int y, int width, int height, ID id, Puzzle puzzle, BufferedImage tex1, BufferedImage tex2, char tag) {
         super(x, y, width, height, id, tex1, tag);
         this.puzzle = puzzle;
 

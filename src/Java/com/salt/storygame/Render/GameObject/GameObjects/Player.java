@@ -17,7 +17,7 @@ public class Player extends GameObject {
 
     boolean canSwim = false;
 
-    public Player(int x, int y, int height, int width, ID id, IGameObjectHandler handler, BufferedImage tex, int tag) {
+    public Player(int x, int y, int height, int width, ID id, IGameObjectHandler handler, BufferedImage tex, char tag) {
         super(x, y, width, height, id, tex, tag);
         this.handler = handler;
     }

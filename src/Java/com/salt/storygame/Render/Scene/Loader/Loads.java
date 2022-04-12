@@ -1,13 +1,10 @@
-package com.salt.storygame.Render.RScene.Loader;
+package com.salt.storygame.Render.Scene.Loader;
 
 import com.salt.storygame.Render.GameObject.GameObjects.*;
 import com.salt.storygame.Render.GameObject.Textures.Textures;
 import com.salt.storygame.Render.IO.BufferedImageLoader;
 import com.salt.storygame.Render.ObjList.IEnumerableID.ID;
 import com.salt.storygame.Render.Utils.IGameObjectHandler;
-import com.salt.storygame.Render.org.Chunk;
-
-import java.awt.image.BufferedImage;
 
 import static com.salt.storygame.Render.org.Chunk.*;
 
@@ -111,6 +108,7 @@ public class Loads {
             }
         }
     }
+
 
     private static void mountainEntrance(IGameObjectHandler handler) {
         handler.destroy();
@@ -427,7 +425,7 @@ public class Loads {
                     handler.add(new Border(i*32, j*32, 32, 32, ID.Border, Textures.border, ' '));
                 } if (red == 255 && blue == 0 && green == 255) {
                     handler.add(new Block(i*32, j*32, 32, 32, ID.Block, Textures.wall1, ' '));
-                } if (red == 0 && blue == 255 && green == 0) {
+                } if (red == 100 && blue == 100 && green == 100) {
                     handler.add(new Player(i*32, j*32, 32, 32, ID.Player, handler, null, ' '));
                 } if (red == 0 && green == 255 && blue == 0) {
                     handler.add(new Button(i*32, j*32, 32, 32, ID.Button, null, Textures.button_wall1, Textures.button_wall2, ' '));
@@ -440,6 +438,7 @@ public class Loads {
                 }
             }
         }
+        handler.add(new Player(32*32, 32*32, 32, 32, ID.Player, handler, null, ' '));
     }
 
     private static void eastCorridor(IGameObjectHandler handler) {

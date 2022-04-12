@@ -14,7 +14,7 @@ public class Chest extends GameObject {
     private String key;
     private boolean used = false;
 
-    public Chest(int x, int y, int width, int height, ID id, Item item, String key, BufferedImage tex, int tag) {
+    public Chest(int x, int y, int width, int height, ID id, Item item, String key, BufferedImage tex, char tag) {
         super(x, y, width, height, id, tex, tag);
         this.item = item;
         this.key = key;

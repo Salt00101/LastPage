@@ -2,18 +2,13 @@ package com.salt.storygame.Render;
 
 import com.salt.storygame.Render.GameObject.Camera;
 import com.salt.storygame.Render.GameObject.GameObject;
-import com.salt.storygame.Render.GameObject.GameObjects.*;
-import com.salt.storygame.Render.GameObject.GameObjects.Button;
-import com.salt.storygame.Render.GameObject.Textures.Textures;
 import com.salt.storygame.Render.IO.BufferedImageLoader;
 import com.salt.storygame.Render.IO.KeyInput;
 import com.salt.storygame.Render.IO.MouseInput;
-import com.salt.storygame.Render.IO.SpriteSheet;
 import com.salt.storygame.Render.ObjList.IEnumerableID.ID;
 import com.salt.storygame.Render.Puzzle.Puzzle;
-import com.salt.storygame.Render.RScene.Scene;
+import com.salt.storygame.Render.Scene.Scene;
 import com.salt.storygame.Render.Utils.IGameObjectHandler;
-import com.salt.storygame.Render.org.Chunk;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
@@ -51,9 +46,7 @@ public class Game extends Canvas implements Runnable {
         this.addKeyListener(new KeyInput(handler));
         this.addMouseListener(new MouseInput(camera, handler));
 
-        // BufferedImageLoader bil = new BufferedImageLoader();
-
-        // spawn = new Scene(handler, bufferedImageLoader.loadImage("/hmap.png"), "Plains", null);
+        spawn = new Scene(handler);
 
         // Start game
         start();

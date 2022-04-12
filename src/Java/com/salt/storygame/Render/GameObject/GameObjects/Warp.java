@@ -2,6 +2,7 @@ package com.salt.storygame.Render.GameObject.GameObjects;
 
 import com.salt.storygame.Render.GameObject.GameObject;
 import com.salt.storygame.Render.ObjList.IEnumerableID.ID;
+import com.salt.storygame.Render.Utils.IGameObjectHandler;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -32,6 +33,23 @@ public class Warp extends GameObject {
 
     @Override
     public void action() {
+    }
 
+    public void action(IGameObjectHandler handler) {
+        Player player = null;
+
+        for (GameObject obj : handler.gameObjects) {
+            if (obj.getId() == ID.Player) { player = (Player) obj; }
+        }
+
+        if (tag == 'n') {
+
+        } if (tag == 's') {
+
+        } if (tag == 'w') {
+
+        } if (tag == 'e') {
+
+        }
     }
 }

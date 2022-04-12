@@ -8,6 +8,10 @@ import java.util.ArrayList;
 public class IGameObjectHandler {
     public ArrayList<GameObject> gameObjects = new ArrayList<>();
 
+    public String pos = "";
+
+    public int dx = 5, dy = 3;
+
     private boolean up = false, down = false, left = false, right = false;
 
     public void tick() {
